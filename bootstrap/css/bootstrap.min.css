@@ -4293,6 +4293,7 @@
   @media (min-width: 768px) {
     .navbar-header {
       float: left;
+      background-color: rgb(105, 102, 102);
     }
   }
   .navbar-collapse {
@@ -4352,8 +4353,9 @@
     .container-fluid > .navbar-header,
     .container > .navbar-collapse,
     .container > .navbar-header {
-      margin-right: 0;
-      margin-left: 0;
+      /* margin-right: 0;
+      margin-left: 0; */
+      background-color: rgb(105, 102, 102);
     }
   }
   .navbar-static-top {
