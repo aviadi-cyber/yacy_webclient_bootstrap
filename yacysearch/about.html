@@ -94,29 +94,29 @@ open about:config and set security.fileuri.strict_origin_policy to ‘false.’
   <div class="container">
 
           <div class="page-header">
-            <h1>This is a search front-end for YaCy!</h1>
-            <p class="lead">Retrieval of search results using YaCys search API and display using AJAX technology.</p>
+            <h1 id="page-header1">This is a search front-end for YaCy!</h1>
+            <p id="lead" class="lead">Retrieval of search results using YaCys search API and display using AJAX technology.</p>
           </div>
 
-          <h2>Solr, JSON(P) and JavaScript / backbone.js - driven</h2>
-          <p>Search results are displayed using AJAX-technology from a Solr server which is embedded into <a href="http://yacy.net">YaCy</a>.
+          <h2 class="heading0">Solr, JSON(P) and JavaScript / backbone.js - driven</h2>
+          <p class="lead">Search results are displayed using AJAX-technology from a Solr server which is embedded into <a href="http://yacy.net">YaCy</a>.
             All search results must be provided by a YaCy search server which includes a Solr with a specialized JSON result writer.
             When a search request is made in one of the search templates, a http request is made to YaCy. The response is done in JSON because that can much better be parsed than XML in JavaScript.
             To overcome the <a href="http://en.wikipedia.org/wiki/Same_origin_policy">same orgin policy</a> in JavaScript, the result is capsuled into a <a href="http://en.wikipedia.org/wiki/JSONP">JSONP</a> response.
             This enables you to run YaCy anywhere and to use the results from this server somewhere else, maybe in static web pages, even from a file system.
             We implemented a proper model view of search results using the <a href="http://en.wikipedia.org/wiki/Model_View_ViewModel">MV*-Fra­me­work</a> <a href="http://backbonejs.org">backbone.js</a>.
           </p>
-          <h2>Industry-Strength Search Efficiency</h2>
-          <p>Because the search results come right from a <a href="http://lucene.apache.org/solr/">Solr</a> instance using a specialized result writer, these templates can provide industry-strength search portals.
+          <h2 class="heading0">Industry-Strength Search Efficiency</h2>
+          <p class="lead">Because the search results come right from a <a href="http://lucene.apache.org/solr/">Solr</a> instance using a specialized result writer, these templates can provide industry-strength search portals.
             This is an unique combination of Solr, JSON(P), flexible JavaScript presentation the beautiful YAML4 CSS Framework and the easiness of web index creation with YaCy.
           </p>
-          <h2>Standard Compliance</h2>
-          <p>There are standards for search request queries (i.e. <a href="http://www.loc.gov/standards/sru/">SRU</a>) and search request responses (i.e. <a href="http://www.opensearch.org">opensearch</a>).
+          <h2 class="heading0">Standard Compliance</h2>
+          <p class="lead">There are standards for search request queries (i.e. <a href="http://www.loc.gov/standards/sru/">SRU</a>) and search request responses (i.e. <a href="http://www.opensearch.org">opensearch</a>).
             YaCy provides both! Actually these search templates send SRU requests to YaCy and the jsonp result writer in Solr (inside YaCy) returns a into-JSON transformed version of openseach.
             If you like, then you can also get search results from the same query url by replacing the "wt=yjson"-parameter by "wt=opensearch".
           </p>
-          <h2>Beautiful CSS Framework</h2>
-          <p>These pages are made with the <a href="https://gitorious.org/yacy/searchpage_template_yaml4">YAML4 CSS Framework</a> and it will serve you very well for the creation of own search portals.
+          <h2 class="heading0">Beautiful CSS Framework</h2>
+          <p class="lead">These pages are made with the <a href="https://gitorious.org/yacy/searchpage_template_yaml4">YAML4 CSS Framework</a> and it will serve you very well for the creation of own search portals.
             Just use the template as provided in the git repository (see below: 'Clone This!') and create your own search portal.
           </p>
 
